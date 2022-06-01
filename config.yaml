@@ -1,0 +1,17 @@
+isExcel: False  # True or False
+EXCEL_FILE: "01.raw_data/April2020Mapping_20132Brd_AcuteNasalsSpeshock.xlsx"
+SAMPLES: ["A1", "A2", "A3", "A4",
+         "B1", "B2", "B3", "B4",
+         "C1", "C2", "C3", "C4",
+         "D1", "D2", "D3", "D4",
+         "E1", "E2", "E3", "E4",
+         "F1", "F2", "F3", "F4"]
+
+
+# Full paths to the specified programs
+programs_path:
+    usearch: "/usr/local/bin/usearch11"
+    xlsx2csv: "/usr/bin/xlsx2csv" # sudo apt-get install xlsx2csv
+    parallel: "/home/jeffbrady/anaconda3/envs/bioinfo/bin/parallel"
+    seqkit:  "/home/jeffbrady/anaconda3/envs/bioinfo/bin/seqkit"
+
