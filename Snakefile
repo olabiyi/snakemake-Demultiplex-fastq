@@ -47,7 +47,7 @@ rule Join_fastq:
 
 # Convert barcodes file from TSV to FASTA
 rule Parse_barcodes:
-    input: EXCEL_FILE if isExcel else "01.raw_data/sample2barcode.tsv"
+    input: EXCEL_FILE #if isExcel else "01.raw_data/sample2barcode.tsv"
     output: "03.Parse_barcodes/bar.fasta"
     params:
         isExcel=isExcel,

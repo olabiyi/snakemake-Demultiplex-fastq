@@ -1,5 +1,6 @@
 isExcel: False  # True or False
-EXCEL_FILE: "01.raw_data/April2020Mapping_20132Brd_AcuteNasalsSpeshock.xlsx"
+# The name of the Ecel or TSV file containing your sampels and barcodes
+EXCEL_FILE: "01.raw_data/sample2barcode.tsv" #"01.raw_data/April2020Mapping_20132Brd_AcuteNasalsSpeshock.xlsx"
 SAMPLES: ["A1", "A2", "A3", "A4",
          "B1", "B2", "B3", "B4",
          "C1", "C2", "C3", "C4",

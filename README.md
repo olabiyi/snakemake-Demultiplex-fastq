@@ -63,6 +63,10 @@ Replace the reads, index and sample2barcodes.tsv file with yours
 
 Configure the workflow according to your needs by editing the files in the `config.yaml` file
 
+	# Get a list of samples to be pasted in the config.yaml file
+	SAMPLES=($(awk '{print $1}' 01.raw_data/sample2barcode.tsv))
+	(echo -ne '[';echo ${SAMPLES[*]} | sed -E 's/ /, /g' | sed -E 's/(\w+)/"\1"/g'; echo -e ']') 
+
 
 ### Step 5:  Run the pipeline
 
